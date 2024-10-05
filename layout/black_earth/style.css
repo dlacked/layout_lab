@@ -1,0 +1,38 @@
+html{
+	margin: 0;
+	height: 100dvh;
+	width: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background: #080808;
+}
+
+.earth {
+	width: 50vh;
+	height: 50vh;
+	background: radial-gradient(at 0% 20%, #060606 70%, #404040 100%);
+	box-shadow: 0 0 30px 10px #262626;
+	background-size: cover;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.worldMap{
+	height: 100%;
+	animation-name: moveEarth;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes moveEarth{
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-58.7%);
+  }
+}
+
