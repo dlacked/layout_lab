@@ -1,0 +1,55 @@
+html, body{
+	margin: 0;
+	background: #242424;
+	overflow: hidden;
+}
+
+.textBox {
+	display: flex;
+	font-size: 3rem;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.text-ml{
+	animation-name: moveleft;
+	color: black;
+	-webkit-text-stroke: 1px #dbdbdb;
+}
+
+.text-mr{
+	animation-name: moveright;
+	color: white;
+	-webkit-text-stroke: 1px #242424;
+}
+
+.text{
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.startRight{
+	justify-content: flex-end;
+	background: #dbdbdb;
+}
+
+
+@keyframes moveleft{
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes moveright{
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(100%, 0, 0);
+	}
+}
