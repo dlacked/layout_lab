@@ -1,0 +1,51 @@
+header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-bottom: whitesmoke 2px solid;
+}
+
+.logo {
+	padding-left: 90px;
+	height: 32px;
+}
+
+nav{
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+nav > .menu{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 300px;
+}
+
+
+nav > .menu > li {
+	padding: 26px;
+	font-size: 19px;
+	
+}
+
+.searcher{
+	height: 20px;
+	padding-right: 100px;
+}
+
+.language{
+	padding: 28px;
+	display: flex;
+	
+}
+
+.language > li:after{
+	content: '|';
+	padding: 10px;
+}
+
+.language > li:last-child:after{
+	content: '';
+}
