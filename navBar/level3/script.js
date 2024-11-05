@@ -1,6 +1,5 @@
 const $GNB = document.getElementsByTagName('header')[0];
-var nowScrollValue = -Infinity;
-var lastScrollValue = Infinity;
+var nowScrollValue, lastScrollValue;
 
 window.addEventListener('scroll', function() {
 	lastScrollValue = nowScrollValue;
